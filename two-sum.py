@@ -1,6 +1,7 @@
 def two_sum(nums, target):
     d = {}
     for i, n in enumerate(nums):
+        print(n)
         m = target - n
         if m in d:
             return [d[m], i]
