@@ -13,6 +13,3 @@ def hasCycle(head):
             nodesSeen.append(head)
         head = head.next
     return False
-
-
-def hasCycleFaster(head):

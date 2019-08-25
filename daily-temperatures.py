@@ -1,5 +1,7 @@
 # Time O(NW)
 # Space O(N + W)
+
+
 def dailyTemperatures(T):
     nxt = [float('inf')] * 102
     ans = [0] * len(T)
@@ -12,10 +14,12 @@ def dailyTemperatures(T):
 
 # Time O(N)
 # Space O(W)
+
+
 def dailyTemperatures2(T):
     ans = [0] * len(T)
     stack = []  # indexes from hottest to coldest
-    for i in xrange(len(T) - 1, -1, -1):
+    for i in range(len(T) - 1, -1, -1):
         while stack and T[i] >= T[stack[-1]]:
             stack.pop()
         if stack:
