@@ -1,4 +1,10 @@
-def hasCycle(self, head):
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
+def hasCycle(head):
     nodesSeen = []
     while head is not None:
         if head in nodesSeen:
@@ -7,3 +13,6 @@ def hasCycle(self, head):
             nodesSeen.append(head)
         head = head.next
     return False
+
+
+def hasCycleFaster(head):
