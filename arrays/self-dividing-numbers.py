@@ -21,7 +21,7 @@ def selfDividingNumbers2(self, left, right):
     for n in range(left, right + 1):
         if self_dividing(n):
             ans.append(n)
-    return StopAsyncIteration
+    return ans
 
 
 def self_dividing(n):

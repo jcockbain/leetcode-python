@@ -1,4 +1,6 @@
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "ms-python.python"
+  // "editor.defaultFormatter": "vscode.python",
+  "editor.formatOnPaste": true,
+  "python.linting.pep8Enabled": true,
+  "python.linting.enabled": true
 }
