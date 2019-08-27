@@ -16,3 +16,10 @@ def flipAndInvertImage(self, A):
         print(B)
         result.append(B)
     return result
+
+
+def flipAndInvertImage2(A):
+    result = []
+    for row in A:
+        result.append(list(map(lambda x: 0 if x == 1 else 1, row[::-1])))
+    return result
