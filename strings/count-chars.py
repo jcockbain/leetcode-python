@@ -14,3 +14,13 @@ def countCharacters(self, words, chars):
         if indicator:
             res += len(word)
     return res
+
+
+def testFunction(i):
+    if i == 65:
+        return True
+    return False
+
+
+print(testFunction(65))
+print(testFunction(50))
