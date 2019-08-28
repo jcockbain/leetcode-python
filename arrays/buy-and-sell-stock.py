@@ -1,3 +1,7 @@
+import unittest
+import sys
+
+
 def maxProfit(prices):
     max_profit = 0
     for i in range(len(prices)):
@@ -7,8 +11,8 @@ def maxProfit(prices):
     return max_profit
 
 
-def maxProfit_2(prices):
-    min_price = sys.maxint
+def maxProfit2(prices):
+    min_price = sys.maxsize
     max_profit = 0
     for i in range(len(prices)):
         if prices[i] < min_price:
@@ -18,4 +22,11 @@ def maxProfit_2(prices):
     return max_profit
 
 
-print(maxProfit([1, 2, 5, 3, 7, 1]))
+class Test(unittest.TestCase):
+    def testMaxProfit(self):
+        self.assertEqual(maxProfit([7, 1, 5, 3, 6, 4]), 5)
+        self.assertEqual(maxProfit2([7, 6, 4, 3, 1]), 0)
+
+
+if __name__ == "__main__":
+    unittest.main()

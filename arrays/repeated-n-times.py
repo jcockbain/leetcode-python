@@ -1,3 +1,14 @@
+import unittest
+
+
+class unittest(inittest.TestCase):
+    def testAlgorithm(self):
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+
 def repeatedNTimes(self, A):
     """
     :type A: List[int]
@@ -14,3 +25,11 @@ def repeatedNTimes(self, A):
         if hMap[j] == reqNum:
             return j
     return 0
+
+
+class unittest(inittest.TestCase):
+    def testAlgorithm(self):
+
+
+if __name__ == "__main__":
+    unittest.main()
